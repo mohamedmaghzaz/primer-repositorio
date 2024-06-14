@@ -41,7 +41,6 @@ $form.addEventListener('submit', (e)=>{
             console.log(err);
             let message= err.statusText || 'Ocurrió un error al enviar, intenta nuevamente.'
             $response.querySelector('h3').innerHTML= `Error ${err.status}: ${message}`;
-            $loader.classList.add('none');
       }).finally(()=>{
             $loader.classList.add('none');
             setTimeout(()=>{
